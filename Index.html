@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>GoodSounds</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#121212">
+
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    body {
+      margin: 0;
+      background: #121212;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 20px;
+      font-size: 26px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      padding: 20px;
+    }
+    .card {
+      background: #1e1e1e;
+      border-radius: 14px;
+      padding: 40px 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>GoodSounds</header>
+
+  <section class="cards">
+    <div class="card">Pop Legends</div>
+    <div class="card">Hip Hop Gold</div>
+    <div class="card">Rock Anthems</div>
+    <div class="card">Smooth Jazz</div>
+  </section>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
