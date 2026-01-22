@@ -1,0 +1,15 @@
+.search-box {
+  padding: 0 20px 10px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+}
+
